@@ -13,10 +13,11 @@ const App = () => {
 
   return (
     <div>
+      <h1>User Information</h1>
       <label>Name:</label>
-      <input onChange={e => dispatch(userName(e.target.value))} /><br /><br />
+      <input type="text" onChange={e => dispatch(userName(e.target.value))} /><br /><br />
       <label>Email:</label>
-      <input onChange={e => dispatch(userEmail(e.target.value))} />
+      <input type="text" onChange={e => dispatch(userEmail(e.target.value))} />
       <div>
         <p>Current values in store:</p>
         <span>Name - </span><span>{name}</span><br /><br />
